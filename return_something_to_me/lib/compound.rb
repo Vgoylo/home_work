@@ -8,7 +8,7 @@ class Compound
   end
 
   def complited
-    "#{something} " + " #{n}"
+    "#{something} " + n
   end
 
   private
