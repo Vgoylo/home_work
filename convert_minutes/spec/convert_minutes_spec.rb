@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../lib/convert_minutes'
 require 'pry'
 
@@ -18,7 +20,7 @@ RSpec.describe 'ConvertMinutes' do
     end
 
     context 'input with float' do
-      let(:convert_minutes) { ConvertMinutes.new() }
+      let(:convert_minutes) { ConvertMinutes.new }
       it 'is valid' do
         expect(convert_minutes.converter).to eq 0
       end
