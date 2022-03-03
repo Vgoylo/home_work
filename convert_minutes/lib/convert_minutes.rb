@@ -4,7 +4,7 @@ class ConvertMinutes
   attr_accessor :n
 
   def initialize(n = nil)
-    @n = n.to_f
+    @n = n.to_i
   end
 
   def converter
