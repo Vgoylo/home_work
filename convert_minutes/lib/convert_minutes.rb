@@ -3,8 +3,8 @@
 class ConvertMinutes
   attr_accessor :n
 
-  def initialize(n)
-    @n = n
+  def initialize(n = nil)
+    @n = n.to_f
   end
 
   def converter
