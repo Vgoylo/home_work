@@ -60,5 +60,12 @@ RSpec.describe 'SumNumber' do
         expect(sum_number.sum_of_numbers).to eq(-2.2)
       end
     end
+
+    context 'sum without value' do
+      let(:sum_number) { SumNumber.new() }
+      it 'is valid' do
+        expect(sum_number.sum_of_numbers).to eq 0
+      end
+    end
   end
 end
