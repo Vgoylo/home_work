@@ -4,7 +4,8 @@ class SumNumber
   attr_accessor :a, :b
 
   def initialize(a = nil, b = nil)
-    @a, @b = a.to_f , b.to_f
+    @a = a.to_f
+    @b = b.to_f
   end
 
   def sum_of_numbers

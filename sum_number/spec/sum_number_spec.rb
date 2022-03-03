@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../lib/sum_number'
 require 'pry'
 
@@ -20,7 +22,7 @@ RSpec.describe 'SumNumber' do
     context 'sum is minus' do
       let(:sum_number) { SumNumber.new(-12, -2) }
       it 'valid' do
-        expect(sum_number.sum_of_numbers).to eq -14
+        expect(sum_number.sum_of_numbers).to eq(-14)
       end
     end
 
